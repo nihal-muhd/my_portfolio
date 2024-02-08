@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nihal's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.qeury.css" />
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
   </head>
   <body>
@@ -32,6 +33,159 @@
           <li><a href="#contact">Contact</a></li>
         </div>
       </div>
+    </div>
+    <div id="profile">
+      <div class="profile-wrap">
+        <img
+          src="./assets/profile.JPG"
+          alt="Nihal's profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="profile-text">
+        <div>
+          <p class="profile-text__p1">Hello, I'm</p>
+          <h1 class="title">Nihal Muhammed</h1>
+        </div>
+
+        <p class="profile-text__p2">Full Stack Developer</p>
+        <div class="text-container">
+          <p>
+            Passionate and self-taught Full-stack developer capable of learning
+            and adopting the latest technologies. A solid mind to commit to
+            tasks and responsibility to track and review progress until the
+            committed job is completed.
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nihal-muhammed-calicut/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nihal-muhd'"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <h1 class="about-title">About Me</h1>
+      <div class="about-wrap">
+        <div class="experience">
+          <div class="exp-title">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+          </div>
+          <div class="job-details-wrap">
+            <div class="job-title">
+              Junior Full Stack Developer @Monolith Technologies
+            </div>
+            <div class="date" style="font-size: 12px">
+              04/2023 - Present,| Chennai, India
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Developed Human Resources (HR) web application using Angular,
+                Node.js, and MongoDB.
+              </div>
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Implemented a employee management system, including workflow,
+                dynamic organizational chart, and sophisticated calendar
+                interface.
+              </div>
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Managed Node.js backend, and handled complex aggregation
+                pipeline.
+              </div>
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Developed the Monolith Academy webpage using Pug js.
+              </div>
+            </div>
+          </div>
+          <div class="job-details-wrap">
+            <div class="job-title">MERN Stack Intern @Brototype</div>
+            <div class="date" style="font-size: 12px">
+              07/2022 - 03/2023,| Calicut, India
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">Developed a social media web app</div>
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Contributed to a team of 26 interns
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience">
+          <div class="exp-title">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+          </div>
+          <div class="job-details-wrap">
+            <div class="job-title">
+              Bsc Computer Science | University Of Calicut
+            </div>
+            <div class="date" style="font-size: 12px">06/2019 - 03/2022</div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Led and implemented a web application using Python flask and
+                MySql.
+              </div>
+            </div>
+            <div class="desc">
+              <div class="dot"></div>
+              <div style="color: #858585">
+                Project aimed to provide users with knowledge about how home
+                appliances work and how to fix them.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
     </div>
     <script src="script.js"></script>
   </body>
