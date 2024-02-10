@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url(./common.stye.less);
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +9,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  .customFlex(center,space-between);
   padding: 20px 4%;
-  box-shadow: #a7a7a759 0 2px 9px;
+  box-shadow: @box_shadow;
 }
 .logo {
   font-size: 32px;
+  font-family: emoji;
 }
 .nav-links {
   list-style: none;
-  color: black;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  .flexAlign(15px);
 }
 li {
   list-style: none;
@@ -30,19 +27,26 @@ li {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: @primary;
   font-size: 20px;
   text-decoration-color: white;
   transition: 0.3s;
 }
 a:hover {
-  color: grey;
+  color: @hover;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 .hamburger-menu {
   display: none;
+}
+.title{
+  color: @primary;
+}
+.exp-icon{
+  background-image: url(./assets/briefcase-solid.svg);
+ .imageProperty(20px,20px)
 }
 #profile {
   position: relative;
@@ -55,90 +59,93 @@ a:hover {
   border-radius: 10px;
   box-shadow: 3px 3px 8px #6d6d6d45;
 }
+.btn-container {
+  .flexAlign(20px)
+}
+
+.btn {
+  transition: all 300ms ease;
+  padding: 10px;
+  width: 8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: 1px solid @border_color;
+  text-align: center;
+}
+.btn-color-1{
+  color: @primary;
+}
+.btn-color-2{
+  color: @white;
+  background-color: @primary;
+}
+
 .profile-text {
-  display: flex;
+  .flexAlign(10px);
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
 }
 .profile-pic {
   height: 300px;
   border-radius: 10px;
 }
-.icon {
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
+
 p {
   text-align: center;
   color: rgb(85, 85, 85);
 }
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
 .profile-text p {
   font-weight: 600;
 }
-#socials-container {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+.social-media-wrap {
+ .flexAlign(15px)
 }
+.icon{
+  .imageProperty(30px,30px);
+  cursor: pointer;
+}
+.linked{
+  background-image: url(./assets/linkedin.svg);
+}
+.git{
+  background-image: url(./assets/github.svg);
+}
+.arrow {
+  background-image: url(./assets/angles-down-solid.svg);
+  position: absolute;
+  .imageProperty(20px,20px);
+  bottom: 8px;
+  right: 10px;
+}
+
 #about,
 #skill,
 #project,
 #contact {
   padding: 20px 40px;
-  gap: 30px;
   margin: 10px 20px;
   border-radius: 10px;
-  box-shadow: 3px 3px 8px #6d6d6d45;
-  display: flex;
-  flex-direction: column;
+  box-shadow: @box_shadow;
   position: relative;
+  .flexColumn(30px);
+}
+.card-title{
+  color: @primary;
+  text-align: center;
+}
+.card-sub-title{
+  color: @primary;
+}
+.about-card-wrap {
+  .flexColumn(10px);
+  padding: 0 70px;
 }
 .experience {
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border:  1px solid  @border_color;
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -146,23 +153,27 @@ p {
   gap: 10px;
 }
 .exp-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+ .flexAlign(10px)
 }
-.job-tltle {
+.job-details-wrap {
+  display: flex;
+  .flexColumn(5px)
+}
+.job-title {
+  .flexAlign(15px);
   color: rgb(85, 85, 85);
 }
-.about-title,
-.skill-title {
-  text-align: center;
+.mono-icon{
+  background-image: url(./assets/monolith-logo.jpg);
+  .imageProperty(25px,25px);
+  background-size: 24px;
 }
-.about-wrap {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  padding: 0 70px;
+.bro-icon{
+  background-image: url(./assets/brototype_logo.jpg);
+  .imageProperty(25px,25px);
+  background-size: 24px;
 }
+
 .dot {
   width: 5px;
   height: 5px;
@@ -176,16 +187,10 @@ p {
   gap: 7px;
   padding-left: 16px;
 }
-.job-details-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.dots{
+  display: none;
 }
-.arrow {
-  position: absolute;
-  bottom: 8px;
-  right: 10px;
-}
+
 .skill-box {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);

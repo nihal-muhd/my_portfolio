@@ -1,0 +1,32 @@
+@primary:#2c2d6f;
+@hover:#b9bad7;
+@text_color:#555491;
+@white:#fff;
+@border_color:#26215c;
+@box_shadow: 3px 3px 8px #6d6d6d45;
+
+.flexAlign(@gap){
+    display: flex;
+    align-items: center;
+    gap: @gap;
+}
+.flexColumn(@gap){
+    display: flex;
+    flex-direction: column;
+    gap: @gap;
+}
+.customFlex(@align,@justify){
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}
+.imageProperty(@height,@width){
+     background-position: center;
+    background-repeat: no-repeat;
+    height: @height;
+    width: @width;
+}
+.dimension(@height,@width){
+    height: @height;
+    width: @width;
+}

@@ -17,8 +17,8 @@
         <ul class="nav-links">
           <li><a href="#about">Experience </a></li>
           <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Self Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </div>
       <div class="hamburger-menu" onclick="toggleMenu()">
@@ -28,10 +28,22 @@
           <div class="line-3"></div>
         </div>
         <div class="menu-links">
-          <li><a href="#about">Expe</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <div class="list">
+            <div class="exp-icon"></div>
+            <li><a href="#about">Experience</a></li>
+          </div>
+          <div class="list">
+            <div class="skill-icon"></div>
+            <li><a href="#experience">Skills</a></li>
+          </div>
+          <div class="list">
+            <div class="project-icon"></div>
+            <li><a href="#projects">Self Projects</a></li>
+          </div>
+          <div class="list">
+            <div class="phone-icon"></div>
+            <li><a href="#contact">Contact Me</a></li>
+          </div>
         </div>
       </div>
     </div>
@@ -45,13 +57,11 @@
       </div>
       <div class="profile-text">
         <div>
-          <p class="profile-text__p1">Hello, I'm</p>
+          <p>Hello, I'm</p>
           <h1 class="title">Nihal Muhammed</h1>
         </div>
 
-        <p class="profile-text__p2">
-          Full Stack & Mobile Application Developer
-        </p>
+        <h3 class="title">Full Stack & Mobile Application Developer</h3>
         <div class="text-container">
           <p>
             Passionate and self-taught Full-stack developer capable of learning
@@ -61,88 +71,94 @@
           </p>
         </div>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
+          <div
+            class="btn btn-color-1"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          </div>
+          <div class="btn btn-color-2" onclick="location.href='./#contact'">
             Contact Info
-          </button>
+          </div>
         </div>
-        <div id="socials-container">
-          <img
+        <div class="social-media-wrap">
+          <div
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
-            class="icon"
+            class="icon linked"
+            title="linked profile"
             onclick="location.href='https://www.linkedin.com/in/nihal-muhammed-calicut/'"
-          />
-          <img
+          ></div>
+          <div
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon git"
+            title="github profile"
             onclick="location.href='https://github.com/nihal-muhd'"
-          />
+          ></div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
+      <div
+        class="arrow"
         onclick="location.href='./#about'"
-      />
+        title="next page"
+      ></div>
     </div>
     <div id="about">
-      <h1 class="about-title">About Me</h1>
-      <div class="about-wrap">
+      <h1 class="card-title">Experience</h1>
+      <div class="about-card-wrap">
         <div class="experience">
-          <div class="exp-title">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-          </div>
           <div class="job-details-wrap">
             <div class="job-title">
-              Junior Full Stack Developer @Monolith Technologies
+              <div class="mono-icon"></div>
+              <h3 class="card-sub-title">
+                Junior Full Stack Developer @Monolith Technologies
+              </h3>
             </div>
             <div class="date" style="font-size: 12px">
               04/2023 - Present | Chennai, India
             </div>
-            <div class="desc">
-              <div class="dot"></div>
-              <div style="color: #858585">
-                Developed Human Resources (HR) web application using Angular,
-                Node.js, and MongoDB.
+            <div class="desc-wrap">
+              <div class="desc">
+                <div class="dot"></div>
+                <div style="color: #858585">
+                  Developed Human Resources (HR) web application using Angular,
+                  Node.js, and MongoDB.
+                </div>
               </div>
-            </div>
-            <div class="desc">
-              <div class="dot"></div>
-              <div style="color: #858585">
-                Implemented a employee management system, including workflow,
-                dynamic organizational chart, and sophisticated calendar
-                interface.
+              <div class="desc">
+                <div class="dot"></div>
+                <div style="color: #858585">
+                  Implemented a employee management system, including workflow,
+                  dynamic organizational<span class="dots" onclick="readMore()"
+                    >...Read more</span
+                  ><span class="more">
+                    chart, and sophisticated calendar interface.
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="desc">
-              <div class="dot"></div>
-              <div style="color: #858585">
-                Managed Node.js backend, and handled complex aggregation
-                pipeline.
-              </div>
-            </div>
-            <div class="desc">
-              <div class="dot"></div>
-              <div style="color: #858585">
-                Developed the Monolith Academy webpage using Pug js.
-              </div>
+              <span class="more">
+                <div class="desc">
+                  <div class="dot"></div>
+                  <div style="color: #858585">
+                    Managed Node.js backend, and handled complex aggregation
+                    pipeline.
+                  </div>
+                </div>
+                <div class="desc">
+                  <div class="dot"></div>
+                  <div style="color: #858585">
+                    Developed the Monolith Academy webpage using Pug js.
+                  </div>
+                </div>
+              </span>
             </div>
           </div>
           <div class="job-details-wrap">
-            <div class="job-title">MERN Stack Intern @Brototype</div>
+            <div class="job-title">
+              <div class="bro-icon"></div>
+              <h3 class="card-sub-title">MERN Stack Intern @Brototype</h3>
+            </div>
             <div class="date" style="font-size: 12px">
               07/2022 - 03/2023 | Calicut, India
             </div>
@@ -158,6 +174,7 @@
             </div>
           </div>
         </div>
+        <h1 class="card-title">Education</h1>
         <div class="experience">
           <div class="exp-title">
             <img
@@ -189,12 +206,11 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#skill'"
-      />
+      <div
+        class="arrow"
+        onclick="location.href='./#about'"
+        title="next page"
+      ></div>
     </div>
     <div id="skill">
       <h1 class="skill-title">Skills</h1>

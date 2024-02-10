@@ -1,3 +1,4 @@
+@import url(./common.stye.less);
 @media (max-width: 800px) {
   .profile-pic {
     height: 200px;
@@ -17,9 +18,8 @@
   .line-1,
   .line-2,
   .line-3 {
-    width: 30px;
-    height: 3px;
-    background-color: black;
+    .dimension(3px,30px);
+    background-color: @primary;
     margin: 6px 0;
     transition: 0.4s;
     opacity: 1;
@@ -40,21 +40,41 @@
 
   .menu-links {
     display: none;
-    transition: 0.3s;
+    transition: 0.5s;
+    .dimension(148px,200px);
   }
   .menu-links.open {
     position: absolute;
     right: 35px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: @white;
+    box-shadow: @box_shadow;
     padding: 15px;
     border-radius: 10px;
     top: 54px;
     display: block;
     z-index: 2;
   }
+  .list{
+    .flexAlign(15px);
+    margin-bottom: 10px;
+    
+  }
+
+  .skill-icon{
+    background-image: url(./assets/code-solid.svg);
+   .imageProperty(20px,20px)
+  }
+  .phone-icon{
+    background-image: url(./assets/phone-solid.svg);
+   .imageProperty(20px,20px)
+  }
+  .project-icon{
+    background-image: url(./assets/list-check-solid.svg);
+   .imageProperty(20px,20px)
+  }
+
   a:hover {
-    color: grey;
+    color: @hover;
     text-decoration: none;
   }
   #profile {
@@ -63,7 +83,7 @@
     height: fit-content;
     gap: 10px;
   }
-  .about-wrap {
+  .about-card-wrap {
     padding: 0;
   }
   #about {
@@ -88,5 +108,34 @@
   }
   .title {
     text-align: center;
+  }
+  .desc-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-height: 131px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .more{
+    display: none;
+  }
+  .more.open{
+    display: block;
+  }
+  .desc{
+    align-items: unset;
+  }
+  .dots{
+    display: inline;
+    font-size: 10px;
+    color: blue;
+    cursor: pointer;
+  }
+  .dots.close{
+    display: none
+  }
+  .dot{
+    margin-top: 8px;  
   }
 }
