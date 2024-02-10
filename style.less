@@ -68,6 +68,22 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
+.repo-btn{
+  transition: all 300ms ease;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: @white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+}
+.repo-btn:hover{
+  background-color: rgb(71, 71, 71);
+}
 
 .btn-color-1,
 .btn-color-2 {
@@ -164,7 +180,7 @@ p {
   padding: 0 70px;
 }
 
-.skill-box {
+.box-wrap {
   border: @border;
   border-radius: 10px;
   flex-grow: 1;
@@ -173,8 +189,19 @@ p {
   height: 300px;
   overflow: auto;
 }
-.skill-box::-webkit-scrollbar{
+.box-wrap::-webkit-scrollbar{
   width: 2px;
+}
+.box-wrap-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: @border;
+  border-radius: 10px;
+  padding: 15px;
+  height: 350px;
+  flex-grow: 1;
+  gap: 5px;
 }
 .skills-wrap {
   display: flex;
@@ -193,7 +220,12 @@ p {
 .skill-name{
   color: @primary;
 }
-
+.tech-used{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .project-box {
   border: @border;
   border-radius: 10px;
@@ -225,22 +257,13 @@ p {
   align-items: center;
   /* justify-content: space-around; */
   padding: 0 70px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .project-desc {
   text-align: center;
 }
-.repo-btn {
-  width: fit-content;
-  border-radius: 5px;
-  border: 1px solid #ecf0fe;
-  color: #2c2d6f;
-  padding: 6px;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
+
 .contact-box {
   display: flex;
   align-items: center;
