@@ -17,8 +17,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">Experience </a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Self Projects</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Self Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </div>
@@ -35,11 +35,11 @@
           </div>
           <div class="list">
             <div class="skill-icon"></div>
-            <li><a href="#experience">Skills</a></li>
+            <li><a href="#skill">Skills</a></li>
           </div>
           <div class="list">
             <div class="project-icon"></div>
-            <li><a href="#projects">Self Projects</a></li>
+            <li><a href="#project">Self Projects</a></li>
           </div>
           <div class="list">
             <div class="phone-icon"></div>
@@ -101,6 +101,7 @@
       </div>
       <div
         class="arrow"
+        title="next section"
         onclick="location.href='./#about'"
         title="next page"
       ></div>
@@ -206,7 +207,8 @@
       </div>
       <div
         class="arrow"
-        onclick="location.href='./#about'"
+        title="next section"
+        onclick="location.href='./#skill'"
         title="next page"
       ></div>
     </div>
@@ -282,6 +284,7 @@
       </div>
       <div
         class="arrow"
+        title="next section"
         onclick="location.href='./#project'"
         title="next page"
       ></div>
@@ -315,7 +318,10 @@
               <div class="skill-name">MongoDB</div>
             </div>
           </div>
-          <div class="repo-btn">
+          <div
+            class="repo-btn"
+            onclick="location.href='https://github.com/nihal-muhd/social_media'"
+          >
             <div class="git-repo-icon"></div>
             Git repo
           </div>
@@ -334,7 +340,10 @@
               <div class="skill-name">Redux</div>
             </div>
           </div>
-          <div class="repo-btn">
+          <div
+            class="repo-btn"
+            onclick="location.href='https://github.com/nihal-muhd/native_food_delivery_client'"
+          >
             <div class="git-repo-icon"></div>
             Git repo
           </div>
@@ -357,7 +366,10 @@
               <div class="skill-name">MongoDB</div>
             </div>
           </div>
-          <div class="repo-btn">
+          <div
+            class="repo-btn"
+            onclick="location.href='https://github.com/nihal-muhd/Pristine-Perfumerie'"
+          >
             <div class="git-repo-icon"></div>
             Git repo
           </div>
@@ -365,36 +377,44 @@
       </div>
       <div
         class="arrow"
-        onclick="location.href='./#project'"
+        title="next section"
+        onclick="location.href='./#contact'"
         title="next page"
       ></div>
     </div>
-    <div id="contact">
-      <h1 class="skill-title">Contact Me</h1>
+    <div id="contact" style="height: 300px">
+      <h1 class="card-title">Contact</h1>
       <div class="contact-box">
-        <a href="mailto:nihalmuhammed7025@gmail.com" class="mail"
+        <div class="mail-icon"></div>
+        <a href="mailto:nihalmuhammed7025@gmail.com"
           >nihalmuhammed7025@gmail.com</a
         >
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#project'"
-      />
+      <div class="contact-box">
+        <div class="call-icon"></div>
+        <a href="tel:+917025796360">+91 7025796360</a>
+      </div>
+      <div class="contact-box">
+        <div class="linked-icon"></div>
+        <a
+          href="https://www.linkedin.com/in/nihal-muhammed-calicut"
+          target="_blank"
+          >Linkedin Profile</a
+        >
+      </div>
     </div>
     <footer>
       <nav>
         <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav-links-footer">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">Experience</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Nihal Muhammed. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
