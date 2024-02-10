@@ -125,7 +125,8 @@ p {
 }
 #about,
 #skill,
-#project {
+#project,
+#contact {
   padding: 20px 40px;
   gap: 30px;
   margin: 10px 20px;
@@ -257,4 +258,14 @@ p {
   display: flex;
   gap: 5px;
   align-items: center;
+}
+.contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
 }
