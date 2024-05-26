@@ -1,14 +1,31 @@
 @import url(./common.stye.less);
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+  #profile, #skill,#project{
+    padding: 10px;
+  }
+  .profile{
+    padding: 0 20px;
+  }
+  .title{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
 
   .profile-pic {
-    height: 200px;
-    width: 200px;
-    background-size: 200px;
-    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    background-size: 100px;
+    border-radius:50px;
   }
   .profile-text {
-    gap: 15px;
+    gap: 10px;
+  }
+  .btn{
+    font-size: 12px;
+    width: 91px;
+    padding: 7px;
   }
   .logo {
     font-size: 24px;
@@ -16,7 +33,12 @@
   .nav-links {
     display: none;
   }
-
+.card-title{
+  font-size: 20px;
+}
+.desc{
+  font-size: 12px;
+}
   .hamburger-menu {
     display: block;
   }
@@ -84,7 +106,7 @@
   }
   #profile {
     flex-direction: column;
-    padding: 20px 40px;
+    // padding: 20px 40px;
     height: fit-content;
     gap: 10px;
   }
@@ -93,6 +115,8 @@
   }
   #about {
     height: fit-content;
+    padding: 10px;
+    gap: 10px;
   }
   .skill-card-wrap {
     flex-direction: column;
